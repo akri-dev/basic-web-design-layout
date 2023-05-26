@@ -1,11 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+    <head> <!-- for this project, I forgot to put viewport in memory, so I had to add it via the warning again -->
         <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="styles.css" />
         <title>Web Design Layout</title>
     </head>
     <body>
-         
+         <main>
+            <div class="landing-area">
+                <img src="images/HIMYM_Iconic.png" style="width: 1002px; height: 659px;" alt="HIMYM Iconic Logo" />
+                <div class="wrapper">
+                    <h1>How I Met Your Mother</h1>
+                    <h6>Source: <a href="https://how-i-met-your-mother.fandom.com/wiki/How_I_Met_Your_Mother">https://how-i-met-your-mother.fandom.com/wiki/How_I_Met_Your_Mother</a></h6>
+                    <p>How I Met Your Mother is an American Sitcom that premiered on <br/>
+                    CBS on September 19, 2005. The show was created by Craig Thomas and Carter Bays.<br/>
+                    The season nine finale aired on March 31, 2014 on CBS.</p>
+                </div>
+            </div>
+            <nav>
+                <a href="https://how-i-met-your-mother.fandom.com/wiki/Tie-in_sites" class="logo">HIMYM</a>
+                <ul>
+                    <li><a href="#cast">Cast</a></li>
+                    <li><a href="#story">Story</a></li>
+                    <li><button class="say-hi">Say Hi</button></li>
+                </ul>
+            </nav>
+            <div class="cast" id="cast">
+                <div id="row-1">
+                    <div class="card">
+                        <img src="images/ted.jpg" alt="Image of Ted">
+                            <h3>Ted</h3>
+                        </img>
+                    </div>
+                    <div class="card">
+                        <img src="images/barney.jpg" alt="Image of Barney">
+                            <h3>Barney</h3>
+                        </img>
+                    </div>
+                    <div class="card">
+                        <img src="images/robin.jpg" alt="Image of Robin">
+                            <h3>Robin</h3>
+                        </img>
+                    </div>
+                </div>
+                <div id="row-2">
+                    <div class="card">
+                        <img src="images/lily.jpg" alt="Image of Lily">
+                            <h3>Lily</h3>
+                        </img>
+                    </div>
+                    <div class="card">
+                        <img src="images/marshal.jpg" alt="Image of Marshal">
+                            <h3>Marshal</h3>
+                        </img>
+                    </div>
+                    <div class="card">
+                        <img src="images/tracy.jpg" alt="Image of Tracy">
+                            <h3>Tracy</h3>
+                        </img>
+                    </div>
+                </div>
+            </div>
+            <div class="story" id="story">
+                <p>"How I Met Your Mother" is a popular American sitcom created by Craig Thomas and Carter Bays for <br/>
+                CBS, which aired from September 2005 to March 2014. The show follows the life of Ted Mosby and his<br/>
+                friends in Manhattan. The series is a joint production by Bays & Thomas Productions and 20th Century<br/>
+                Fox Television and syndicated by 20th Television (now Disney-ABC Domestic Television).<br/><br/>
+
+                The show's unique structure, humor, and dramatic elements made it popular throughout its run. Pamela<br/>
+                Fryman directed the vast majority of episodes, with other directors including Rob Greenberg, Michael<br/>
+                Shea, and Neil Patrick Harris. The show was nominated for 91 awards and received 21, including the<br/>
+                People's Choice Award for Favorite Network TV Comedy in 2012.<br/><br/>
+                    
+                Source: <a href="https://en.wikipedia.org/wiki/How_I_Met_Your_Mother">https://en.wikipedia.org/wiki/How_I_Met_Your_Mother</a></p>
+            </div>
+            <footer>
+                <h4>Practice Project by Alec Joseph</h4>
+            </footer>
+            <div class="popup">
+                <div class="blanket"></div>
+                <div class="content">
+                    <form action="">
+                        <div class="item">
+                            <label for="">Name</label>
+                            <input type="text" placeholder="Input your name here" value="Alec"/>
+                        </div>
+                        <div class="item">
+                            <label for="">Message</label>
+                            <input type="text" placeholder="Input your message here" />
+                        </div>
+                    </form>
+                    <div class="close"></div>
+                </div>
+            </div>
+         </main>
     </body>
 </html>
