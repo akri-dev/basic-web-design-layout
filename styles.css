@@ -1,3 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap'); /* Font style */
+
+
 html {
     background-color: #FFFFFF;
 }
+
+html, body {
+    font-family: 'Inter', sans-serif;
+    /* CSS Reset (I think hehe) */
+    padding: 0; 
+    margin: 0;
+}
+
+h1 {
+    font-weight: 700; /* 700 bold*/
+    font-size: 64px;
+}
+
+h6 {
+    font-weight: 400; /* 400 regular */
+    font-size: 16px;
+}
+
+p { 
+    font-weight: 400;
+    font-size: 36px;
+}
+.landing-area {
+    background-color: #39F178;
+    min-height: 100vh;
+    padding: 0 20px; /* gives a padding inside the .landing-area which will affect where the wrapper div is also placed */
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+}
+
+.landing-area h1 {
+    color: black;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.landing-area h6, .landing-area h6 a {
+    color: black;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.landing-area p {
+    text-align: center;
+    margin: .5rem 0 0 0;
+}
+
+.wrapper {
+    width: 1400px;
+    height: 901px;
+    margin: 0 auto; /* puts wrapper div in middle of the nested parent (.landing-area) | MAYBE */
+}
+
+#iconic {
+    display: block;
+    margin: 0 auto;
+    width: 1002px;
+    height: 659px;
+}
+
+nav {
+    height: 120px;
+    background-color: #3E9EF6;
+    box-shadow: 0 5px 8px rgba(0,0,0,.2);
+    position: sticky;
+}
+
+nav a.logo {
+    color: white;
+    font-weight: 700;
+    font-size: 64px;
+    display: block;
+    width: 841px;
+    position: absolute; top: 50%; left: 30px;
+    /* positions your element from the top to the parent's 50% height. where in this case it's 60px absolutely positioned */
+    margin-top: -38.5px; /*minus 38.5 px because the a.logo height is a total of 77px */
+    overflow: hidden;
+}
+
+nav a:link, nav a:visited , nav a:hover, nav a:active {
+    text-decoration: none;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: block;
+    float: right;
+}
+
+nav ul li{
+    margin: 0;
+    padding: 0;
+    display: block;
+    float: left;
+}
+
+nav ul li a{
+    display: block;
+    height: 100%;   
+    box-sizing: border-box;
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    padding: 39px 37.5px;
+}
+
+.cast {
+    background-color: white;
+    min-height: 100vh;
+    padding: 0 20px; /* gives a padding inside the .landing-area which will affect where the wrapper div is also placed */
+    box-sizing: border-box;
+    position: relative; 
+}
+
+#row-cards {
+    width: 1179.99px;
+    height: 1252.62px;
+    margin: 103px auto;
+    overflow: hidden;
+}
+
+.row {
+    display: inline-block;
+    width: 1179.99px;
+}
+
+.card {
+    display: inline-block;
+    margin-right: 23px;
+}
+
+.card img {
+    width: 364.09px;
+    height: 546.13px;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+
+}
+
+.card h3 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    margin: 21.18px;
+}
+
+#last-card1 img, #last-card2 img{
+    width: 364.09px;
+    height: 546.13px;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    margin-right: 0;
+}
+
+.story p, .story p a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    color: black;
+    margin: 0 auto;
+}
+
+.wrapper-2 {
+    width: 1484px;
+    height: 433px;
+    margin: 0 auto;
+}
+
+footer {
+    margin: 79px auto 0;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    color: black;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.popup.show{
+    display: block;
+}
+
+.popup .blanket {
+    background-color: rgba(0,0,0,.6);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.popup .content {
+    background-color: white;
+    width: 971px;
+    padding: 41px 60px;
+    height: 558px;
+    box-sizing: border-box;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -485.5px;
+    margin-top: -279px;
+}
+
+.popup .content label {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    color: black;
+    display: block;
+    margin: 10px auto;
+}
+
+.popup .close {
+    height: 66px;
+    width: 66px;
+    background: #FF0000 url(images/close-button.png) no-repeat center center;
+    background-size: 85%;
+    top: -33px;
+    right: -33px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    overflow: hidden;
+    text-indent: -999px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.popup .item {
+    float: left;
+    width: 847px;
+}
+
+.popup .item input[type="text"], textarea{
+    display: block;
+    font-size: 32px;
+    font-weight: 700;
+    border: 2px solid black;
+    height: 55px;
+    width: 851px;
+    box-sizing: border-box;
+}
+
+#message{
+    display: block;
+    font-size: 32px;
+    font-weight: 700;
+    border: 2px solid black;
+    height: 247px;
+    box-sizing: border-box;
+    text-align: top;
+}
+
+.bt {
+    float: right;
+    background-color: #00D923;
+    color: white;
+    border: none;
+    width: 248px;
+    height: 49;
+    font-size: 36px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    margin-top: 15px;
+    text-align: center;
+}
+
+
+/* <div class="popup">
+                <div class="blanket"></div>
+                <div class="content">
+                    <form action="">
+                        <div c  lass="item">
+                            <label  for="">Name</label>
+                            <input type="text" placeholder="Input your name here" value="Alec"/>
+                        </div>  
+                        <div class="item">
+                            <label for="">Message</label>
+                            <input type="text" placeholder="Input your message here" />
+                        </div>
+                        <button class="bt" type="button">Submit</button>
+                    </form>
+                    <button class="close">Close</button>
+                </div>
+            </div>
+*/
