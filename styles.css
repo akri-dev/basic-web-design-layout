@@ -185,3 +185,122 @@ footer {
     font-size: 32px;
     color: black;
 }
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.popup.show{
+    display: block;
+}
+
+.popup .blanket {
+    background-color: rgba(0,0,0,.6);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.popup .content {
+    background-color: white;
+    width: 971px;
+    padding: 41px 60px;
+    height: 558px;
+    box-sizing: border-box;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -485.5px;
+    margin-top: -279px;
+}
+
+.popup .content label {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    color: black;
+    display: block;
+    margin: 10px auto;
+}
+
+.popup .close {
+    height: 66px;
+    width: 66px;
+    background: #FF0000 url(images/close-button.png) no-repeat center center;
+    background-size: 85%;
+    top: -33px;
+    right: -33px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    overflow: hidden;
+    text-indent: -999px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.popup .item {
+    float: left;
+    width: 847px;
+}
+
+.popup .item input[type="text"], textarea{
+    display: block;
+    font-size: 32px;
+    font-weight: 700;
+    border: 2px solid black;
+    height: 55px;
+    width: 851px;
+    box-sizing: border-box;
+}
+
+#message{
+    display: block;
+    font-size: 32px;
+    font-weight: 700;
+    border: 2px solid black;
+    height: 247px;
+    box-sizing: border-box;
+    text-align: top;
+}
+
+.bt {
+    float: right;
+    background-color: #00D923;
+    color: white;
+    border: none;
+    width: 248px;
+    height: 49;
+    font-size: 36px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    margin-top: 15px;
+    text-align: center;
+}
+
+
+/* <div class="popup">
+                <div class="blanket"></div>
+                <div class="content">
+                    <form action="">
+                        <div c  lass="item">
+                            <label  for="">Name</label>
+                            <input type="text" placeholder="Input your name here" value="Alec"/>
+                        </div>  
+                        <div class="item">
+                            <label for="">Message</label>
+                            <input type="text" placeholder="Input your message here" />
+                        </div>
+                        <button class="bt" type="button">Submit</button>
+                    </form>
+                    <button class="close">Close</button>
+                </div>
+            </div>
+*/
